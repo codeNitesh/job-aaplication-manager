@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 100.0.4896.127 (Mac OS 10.15.7)" package="" timestamp="2022-05-03T07:02:29" id="0" hostname="Niteshs-Air" tests="5" errors="0" failures="0" time="0.132">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"/>
+  </properties>
+  <testcase name="JobService should delete one job by id" time="0.069" classname="JobService"/>
+  <testcase name="JobService should get one job by id" time="0.005" classname="JobService"/>
+  <testcase name="JobService should add a new job" time="0.004" classname="JobService"/>
+  <testcase name="JobService should update one job by id" time="0.003" classname="JobService"/>
+  <testcase name="JobService should return all jobs" time="0.051" classname="JobService"/>
+  <system-out>
+    <![CDATA[Chrome 100.0.4896.127 (Mac OS 10.15.7) ERROR: 'DEPRECATION: describe with no children (describe() or it()) is deprecated and will be removed in a future version of Jasmine. Please either remove the describe or add children to it.
+Error: 
+    at <Jasmine>
+    at Env.jasmineEnv.<computed> [as describe] (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/fesm2015/zone-testing.js:454:1)
+    at <Jasmine>
+    at Object.4882 (http://localhost:9876/_karma_webpack_/webpack:/src/app/app.component.spec.ts:7:1)
+    at __webpack_require__ (http://localhost:9876/_karma_webpack_/webpack:/webpack/bootstrap:19:1)
+Note: This message will be shown only once. Set the verboseDeprecations config property to true to see every occurrence.'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

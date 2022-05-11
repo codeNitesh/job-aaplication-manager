@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="header d-flex justify-content-between align-items-center mb-3">
+        <h4>All Job Applications</h4>
+        <button [routerLink]="['/new/']" class="btn btn-dark">Add New Job</button>
+    </div>
+    <div class="row">
+        <div class="col-4 border border-dark p-3" *ngFor="let job of jobs">
+            <div class="content">
+                <p><strong>Job Title:</strong> {{job.job_title}}</p>
+                <p><strong>Company Name:</strong> {{job.company_name}}</p>
+                <p><strong>Application Starts On:</strong> {{job.application_starts_on}}</p>
+                <p><strong>Application Ends On:</strong> {{job.application_ends_on}}</p>
+                <p><strong>Package Offered:</strong> {{job.package_offered}} LPA</p>
+                <p><strong>Status:</strong> {{job.status}}</p>
+            </div>
+            <div class="footer d-flex justify-content-between align-items-center">
+                <button [routerLink]="['/', job.id]" class="btn btn-light border-dark">View Details</button>
+            </div>
+        </div>
+        
+    </div>
+</div>
